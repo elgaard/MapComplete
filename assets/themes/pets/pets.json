@@ -99,6 +99,48 @@
       }
     },
     {
+      "builtin": "cafe_pub",
+      "override": {
+        "id": "cafe_pub_dog_friendly",
+        "name": {
+          "en": "Dog friendly drinking places",
+          "da": "Hundevenlige værtshuse"
+        },
+        "pointRendering": [
+          {
+            "iconBadges+": [
+              "icons.dogicon"
+            ]
+          }
+        ],
+        "=presets": [],
+        "source": {
+          "osmTags": {
+            "and+": [
+              {
+                "or": [
+                  "dog=unleashed",
+                  "dog=leashed",
+                  "dog=yes"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "builtin": "cafe_pub",
+      "override": {
+        "minzoom": 18,
+        "isCounted": false,
+        "filter": {
+          "sameAs": "cafe_pub_dog_friendly"
+        },
+        "name": null
+      }
+    },
+    {
       "builtin": "shops",
       "override": {
         "id": "shop_dog_friendly",
